@@ -1,0 +1,9 @@
+flask
+requests
+pylint
+pytest
+pycodestyle
+flask_mysqldb
+flask-WTF
+passlib
+functools

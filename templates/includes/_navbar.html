@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand navbar navbar-light" style="background-color: #e3f2fd;"aria-label="navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Farming Assistant</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/home">Home</a></li>
+        <li><a class="nav-link" href="/about">About</a></li>
+        <li><a class="nav-link" href="/articles">Articles</a></li>
+      </ul>
+
+      <ul class="navbar-nav  navbar-right">
+        {% if session.logged_in %}
+        <li><a class="nav-link" href="/logout">Logout</a></li>
+        {% else %}
+        <li><a class="nav-link" href="/register">Register</a></li>
+        <li></li><a class="nav-link" href="/login">Login</a></li>
+        {% endif %}
+      </ul>
+
+    </div>
+  </div>
+</nav>
